@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-HK">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Conway’s Game of Life</title>
+</head>
+<body>
+    <h1>Conway’s Game of Life</h1>
+    <div id="game"></div>
+    <p>
+        Conway’s Game of Life is a simulation of an ecosystem that consists of
+        binary cells on a toroidal grid. Cells exhibit the following behaviour:
+    </p>
+    <ul>
+        <li>
+            A live cell with less than two live neighbours will die due to
+            underpopulation;
+        </li>
+        <li>
+            A live cell with two or three live neighbours will live on;
+        </li>
+        <li>
+            A live cell with more than three neighbours will die due to
+            overpopulation;
+        </li>
+        <li>
+            A dead cell with three live neighbours will gain life
+            through reproduction.
+        </li>
+    </ul>
+    <p>
+        You can interact with the simulation by pressing on cells. This will
+        toggle them between live and dead states. Beware that even the tiniest
+        change can cause mayhem across the ecosystem!
+    </p>
+    <p>
+        This is demo application was built by <a href="https://chuniversiteit.nl">Chun Fei Lung</a> using TypeScript and React.
+        You can find the <a href="https://github.com/chunfeilung/game-of-life">source code on GitHub</a>.
+        <a href="https://github.com/chunfeilung/game-of-life/issues/new">Feel free to create an issue</a> if you have any questions about this demo.
+    </p>
+    <noscript>
+        <p>In order to view this demo, you need to enable JavaScript or use a browser that supports JavaScript.</p>
+    </noscript>
+    <script src="bundle.js"></script>
+</body>
+</html>
