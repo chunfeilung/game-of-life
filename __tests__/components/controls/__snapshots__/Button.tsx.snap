@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`executes functions when clicked 1`] = `
+<button
+  id="testButton"
+  onClick={[Function]}
+>
+  Push me
+</button>
+`;

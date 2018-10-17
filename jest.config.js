@@ -12,6 +12,7 @@ module.exports = {
   // An array of file extensions your modules use
   moduleFileExtensions: [
     "ts",
+    "tsx",
     "js"
   ],
 
@@ -20,11 +21,11 @@ module.exports = {
 
   // The glob patterns Jest uses to detect test files
   testMatch: [
-    "**/__tests__/**/*.+(ts|js)"
+    "**/__tests__/**/*.+(ts|tsx|js)"
   ],
 
   // A map from regular expressions to paths to transformers
   transform: {
-    "^.+\\.ts$": "ts-jest"
+    "^.+\\.(ts|tsx)$": "ts-jest"
   }
 };

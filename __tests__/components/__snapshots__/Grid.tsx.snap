@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correctly renders a small grid 1`] = `
+<table
+  className="game-grid"
+>
+  <tbody>
+    <tr>
+      <td
+        className="cell -is-active"
+        id="cell_0_0"
+      />
+      <td
+        className="cell -is-active"
+        id="cell_0_1"
+      />
+      <td
+        className="cell -is-active"
+        id="cell_0_2"
+      />
+    </tr>
+    <tr>
+      <td
+        className="cell"
+        id="cell_1_0"
+      />
+      <td
+        className="cell"
+        id="cell_1_1"
+      />
+      <td
+        className="cell"
+        id="cell_1_2"
+      />
+    </tr>
+    <tr>
+      <td
+        className="cell -is-active"
+        id="cell_2_0"
+      />
+      <td
+        className="cell"
+        id="cell_2_1"
+      />
+      <td
+        className="cell -is-active"
+        id="cell_2_2"
+      />
+    </tr>
+    <tr>
+      <td
+        className="cell"
+        id="cell_3_0"
+      />
+      <td
+        className="cell -is-active"
+        id="cell_3_1"
+      />
+      <td
+        className="cell"
+        id="cell_3_2"
+      />
+    </tr>
+  </tbody>
+</table>
+`;

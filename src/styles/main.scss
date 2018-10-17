@@ -1,0 +1,47 @@
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -.15rem;
+}
+
+.game-controls {
+  margin: .5rem 0;
+
+  button {
+    font-size: 1rem;
+    margin-right: .8rem;
+    padding: .4rem .8rem;
+    width: 4.9rem;
+  }
+
+  input,
+  label {
+    margin-left: .8rem;
+  }
+
+  input {
+    position: relative;
+    top: .15rem;
+  }
+}
+
+.game-grid {
+  border-collapse: collapse;
+  margin: 0 auto;
+
+  .cell {
+    border: 1px solid #eee;
+    height: 5px;
+    font-size: 0;
+    text-indent: -10000rem;
+    width: 5px;
+
+    &.-is-active {
+      background: #333;
+    }
+  }
+}
