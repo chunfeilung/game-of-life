@@ -7,35 +7,43 @@ exports[`renders correctly 1`] = `
   <div
     className="game-controls"
   >
-    <button
-      id="clearButton"
-      onClick={[Function]}
+    <div
+      className="control-group"
     >
-      Clear
-    </button>
-    <button
-      id="nextButton"
-      onClick={[Function]}
+      <button
+        id="clearButton"
+        onClick={[Function]}
+      >
+        Reset
+      </button>
+      <button
+        id="nextButton"
+        onClick={[Function]}
+      >
+        Next
+      </button>
+      <button
+        id="playButton"
+        onClick={[Function]}
+      >
+        Play
+      </button>
+    </div>
+    <div
+      className="control-group"
     >
-      Next
-    </button>
-    <button
-      id="playButton"
-      onClick={[Function]}
-    >
-      Play
-    </button>
-    <label>
-      Speed:
-      <input
-        id="slider"
-        max="10"
-        min="1"
-        onChange={[Function]}
-        type="range"
-        value={5}
-      />
-    </label>
+      <label>
+        Speed:
+        <input
+          id="slider"
+          max="10"
+          min="1"
+          onChange={[Function]}
+          type="range"
+          value={5}
+        />
+      </label>
+    </div>
   </div>
   <table
     className="game-grid"

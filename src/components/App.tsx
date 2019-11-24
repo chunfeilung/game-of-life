@@ -45,18 +45,22 @@ export class App extends React.Component<IAppProps, IAppState> {
     return (
       <div className="game-app">
         <div className="game-controls">
-          <Button id="clearButton" label="Clear" onClick={this.clear}/>
-          <Button id="nextButton" label="Next" onClick={this.next}/>
-          <Button
-            id="playButton"
-            label={this.state.isPlaying ? "Pause" : "Play"}
-            onClick={this.togglePlay}
-          />
-          <Slider
-            id="slider"
-            value={this.state.speed}
-            onChange={this.adjustSpeed}
-          />
+          <div className="control-group">
+            <Button id="clearButton" label="Reset" onClick={this.clear}/>
+            <Button id="nextButton" label="Next" onClick={this.next}/>
+            <Button
+              id="playButton"
+              label={this.state.isPlaying ? "Pause" : "Play"}
+              onClick={this.togglePlay}
+            />
+          </div>
+          <div className="control-group">
+            <Slider
+              id="slider"
+              value={this.state.speed}
+              onChange={this.adjustSpeed}
+            />
+          </div>
         </div>
         <Grid cells={this.state.cells} onMouseDown={this.flip}/>
       </div>

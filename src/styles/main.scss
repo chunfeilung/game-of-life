@@ -19,7 +19,11 @@ ul {
 }
 
 .game-controls {
-  margin: .5rem 0;
+  margin: .5rem 0 1.5rem;
+
+  .control-group {
+    margin: .8rem 0;
+  }
 
   button {
     font-size: 1rem;
