@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       className="control-group"
     >
       <button
-        id="clearButton"
+        id="resetButton"
         onClick={[Function]}
       >
         Reset

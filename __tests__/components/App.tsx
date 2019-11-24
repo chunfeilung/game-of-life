@@ -91,7 +91,7 @@ it("can toggle cells between active and inactive states", () => {
 });
 
 // Note that in this case, the initial state is the seed pattern
-it("resets the app to its initial state when “Clear” is pressed", () => {
+it("resets the app to its initial state when “Reset” is pressed", () => {
   /* Given */
   const game = new Game(5, 5, seed);
   const app = mount(<App game={game}/>);
@@ -101,7 +101,7 @@ it("resets the app to its initial state when “Clear” is pressed", () => {
   app.find("#cell_1_2").simulate("mouseDown");
 
   /* When */
-  app.find("#clearButton").hostNodes().simulate("click");
+  app.find("#resetButton").hostNodes().simulate("click");
 
   /* Then */
   expectToSeeIterationPattern0(app);
@@ -221,7 +221,7 @@ it("stops playing when the “Pause” button is pressed", () => {
   expect(app.find("#playButton").hostNodes().text()).toBe("Play");
 });
 
-it("stops playing when the “Clear” button is pressed", () => {
+it("stops playing when the “Reset” button is pressed", () => {
   jest.useFakeTimers();
 
   /* Given */
@@ -231,7 +231,7 @@ it("stops playing when the “Clear” button is pressed", () => {
   jest.advanceTimersByTime(90);
 
   /* When */
-  app.find("#clearButton").hostNodes().simulate("click");
+  app.find("#resetButton").hostNodes().simulate("click");
   jest.advanceTimersByTime(90);
   app.update();
 

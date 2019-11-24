@@ -46,7 +46,7 @@ export class App extends React.Component<IAppProps, IAppState> {
       <div className="game-app">
         <div className="game-controls">
           <div className="control-group">
-            <Button id="clearButton" label="Reset" onClick={this.clear}/>
+            <Button id="resetButton" label="Reset" onClick={this.reset}/>
             <Button id="nextButton" label="Next" onClick={this.next}/>
             <Button
               id="playButton"
@@ -70,8 +70,8 @@ export class App extends React.Component<IAppProps, IAppState> {
   /**
    * Reverts the grid to its initial state.
    */
-  private clear = (): void => {
-    // Pressing “Clear” while the simulation is running should pause it
+  private reset = (): void => {
+    // Pressing “Reset” while the simulation is running should pause it
     if (this.state.isPlaying) {
       this.togglePlay();
     }

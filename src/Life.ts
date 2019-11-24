@@ -214,11 +214,11 @@ export class Game {
     // Run a 3x3 kernel past every cell
     for (let i = row - 1; i <= row + 1; i++) {
       for (let j = column - 1; j <= column + 1; j++) {
-        // Pretend that our grid is toroidal, i.e. the right and left, and
-        // bottom and top edges are “stitched” together
-        const wrappedRow = (i + this.height) % this.height;
-        const wrappedCol = (j + this.width) % this.width;
-        activeCells += Number(this.currentGrid[wrappedRow][wrappedCol]);
+        if (i < 0 || j < 0 || i >= this.height || j >= this.width) {
+          continue;
+        }
+
+        activeCells += Number(this.currentGrid[i][j]);
       }
     }
     return activeCells;

@@ -226,20 +226,6 @@ describe("evolution of some popular patterns", () => {
           [0, 0, 0, 0],
         ]),
       ],
-
-      // In all four corners
-      [
-        [0, 0],
-        [0, 3],
-        [3, 0],
-        [3, 3],
-        convertToBoolean([
-          [1, 0, 0, 1],
-          [0, 0, 0, 0],
-          [0, 0, 0, 0],
-          [1, 0, 0, 1],
-        ]),
-      ],
     ])(
       "can evolve blocks", (cell1: number[],
                             cell2: number[],
