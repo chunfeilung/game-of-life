@@ -231,7 +231,7 @@ describe("evolution of some popular patterns", () => {
                             cell2: number[],
                             cell3: number[],
                             cell4: number[],
-                            expected: number[][]) => {
+                            expected: Grid) => {
         /* Given */
         const life = new Game(4, 4);
         life.flip(cell1[0], cell1[1]);

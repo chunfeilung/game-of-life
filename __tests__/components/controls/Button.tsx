@@ -14,7 +14,7 @@ it("executes functions when clicked", () => {
 
   /* When */
   const snapshot = component.toJSON();
-  snapshot.props.onClick();
+  component.root.props.onClick();
 
   /* Then */
   expect(snapshot).toMatchSnapshot();
